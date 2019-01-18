@@ -1,0 +1,199 @@
+/* HSL */
+/* RGB */
+/* HSL */
+/* RGB */
+/*BORDEAUX*/
+/*LIGHTER THAN OFF*/
+@import url("https://fonts.googleapis.com/css?family=Raleway|Satisfy");
+@import url("https://fonts.googleapis.com/css?family=Raleway|Satisfy");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@-webkit-keyframes gradient-transition {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes lightshow {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+/* line 7, ../sass/affiliates.scss */
+body {
+  background: #48484d;
+}
+
+/* line 10, ../sass/affiliates.scss */
+.affiliate-header {
+  margin-top: 100px;
+  text-align: center;
+  color: #00994d;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+/* line 17, ../sass/affiliates.scss */
+.affiliates-container {
+  width: 100%;
+  height: calc(500px + 500px + 500px + 150px);
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+/* line 25, ../sass/affiliates.scss */
+.affiliates-container > div {
+  transition: all .3s ease;
+}
+/* line 28, ../sass/affiliates.scss */
+.affiliates-container .razer-card {
+  width: 100%;
+  height: 500px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+/* line 34, ../sass/affiliates.scss */
+.affiliates-container .steelseries-card {
+  width: 100%;
+  height: 500px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+/* line 40, ../sass/affiliates.scss */
+.affiliates-container .twitch-card {
+  width: 100%;
+  height: 500px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* line 48, ../sass/affiliates.scss */
+.card-header {
+  width: 100%;
+  height: 150px;
+  opacity: .75;
+}
+
+/* line 53, ../sass/affiliates.scss */
+.card-content {
+  height: 350px;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+}
+/* line 60, ../sass/affiliates.scss */
+.card-content h1 {
+  font-size: 3rem;
+  color: #00994d;
+}
+/* line 64, ../sass/affiliates.scss */
+.card-content a {
+  display: block;
+  background: transparent;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid #00994d;
+  color: #00994d;
+  font-size: 2rem;
+  transition: all .3s ease;
+}
+/* line 74, ../sass/affiliates.scss */
+.card-content a:hover {
+  border: 2px solid white;
+  background: #00994d;
+  color: white;
+  cursor: pointer;
+}
+
+/* line 82, ../sass/affiliates.scss */
+.razer {
+  background: url(../images/razer.jpg);
+  background-position: top;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* line 89, ../sass/affiliates.scss */
+.steelseries {
+  background: url(../images/series.png);
+  background-position: bottom;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* line 96, ../sass/affiliates.scss */
+.twitch {
+  background: url(../images/twitch.png);
+  background-position: center;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* line 103, ../sass/affiliates.scss */
+.gold {
+  color: gold;
+}
+
+/* line 106, ../sass/affiliates.scss */
+.purple {
+  color: purple;
+}
+
+/* line 110, ../sass/affiliates.scss */
+.razer-card:hover, .twitch-card:hover, .steelseries-card:hover {
+  -webkit-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+  transform: scale(1.05);
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* line 118, ../sass/affiliates.scss */
+.razer-card:hover h1, .twitch-card:hover h1, .steelseries-card:hover h1 {
+  color: white;
+}
+
+/* line 121, ../sass/affiliates.scss */
+.razer-card:hover .card-header, .twitch-card:hover card-header, .steelseries-card:hover card-header {
+  opacity: 1;
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 126, ../sass/affiliates.scss */
+  .affiliate-header {
+    margin-top: 150px;
+    font-size: 2rem;
+  }
+
+  /* line 130, ../sass/affiliates.scss */
+  .affiliates-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
+  }
+
+  /* line 136, ../sass/affiliates.scss */
+  .razer-card, .twitch-card, .steelseries-card {
+    max-width: 300px;
+  }
+}

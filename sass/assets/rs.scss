@@ -1,0 +1,20 @@
+@import "compass/css3";
+@import "mixins.scss";
+@import "colors.scss";
+@import url('https://fonts.googleapis.com/css?family=Raleway|Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+.review-container{
+  .review__card{
+    h3{
+      &::after{
+        content: '65%' !important;
+        position: absolute;
+        right: 0;
+        font-size: inherit;
+        bottom: 7px;
+        color: darken($txtnickel, 25);
+      }
+    }
+  }
+}

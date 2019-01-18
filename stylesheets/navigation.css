@@ -1,0 +1,128 @@
+/* HSL */
+/* RGB */
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+/* line 5, ../sass/navigation.scss */
+:root {
+  font-size: 16px !important;
+}
+
+/* line 9, ../sass/navigation.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 15, ../sass/navigation.scss */
+nav {
+  height: 100px;
+  width: 100%;
+  background: #003049;
+  position: fixed;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  z-index: 100;
+}
+/* line 25, ../sass/navigation.scss */
+nav > ul {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  justify-content: flex-end;
+}
+/* line 34, ../sass/navigation.scss */
+nav > ul > li {
+  list-style: none;
+  text-align: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+/* line 38, ../sass/navigation.scss */
+nav > ul > li:nth-last-child(1) {
+  border-right: none;
+}
+/* line 42, ../sass/navigation.scss */
+nav > ul > li > a {
+  text-decoration: none;
+  padding: 0 50px;
+  display: block;
+}
+
+/* line 50, ../sass/navigation.scss */
+ul li a .name {
+  position: relative;
+  height: 20px;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+/* line 57, ../sass/navigation.scss */
+ul li a .name span {
+  display: block;
+  position: relative;
+  color: #eae2b7;
+  font-size: 18px;
+  line-height: 20px;
+  transition: .5s;
+}
+
+/* line 65, ../sass/navigation.scss */
+ul li a .name span::before {
+  content: attr(data-text);
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #d62828;
+}
+
+/* line 74, ../sass/navigation.scss */
+ul li a:hover .name span {
+  transform: translateY(20px);
+}
+
+/* line 77, ../sass/navigation.scss */
+ul li a .icon {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background: #003049;
+  overflow: hidden;
+  margin: 0 auto 10px;
+}
+
+/* line 86, ../sass/navigation.scss */
+ul li a .icon .fas {
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  font-size: 34px;
+  transition: .5s;
+  color: #eae2b7;
+}
+
+/* line 94, ../sass/navigation.scss */
+ul li a .icon .fas:nth-last-child(1) {
+  color: #d62828;
+}
+
+/* line 97, ../sass/navigation.scss */
+ul li a:hover .icon .fas {
+  transform: translateY(-100%);
+}
+
+/* line 101, ../sass/navigation.scss */
+.logo {
+  position: absolute;
+  left: 2rem;
+  color: #eae2b7;
+  cursor: pointer;
+}
+/* line 106, ../sass/navigation.scss */
+.logo h1 {
+  font-size: 2rem;
+}

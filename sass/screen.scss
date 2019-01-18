@@ -1,0 +1,287 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "compass/css3";
+@import "mixins.scss";
+@import url('https://fonts.googleapis.com/css?family=Raleway|Satisfy');
+@import "colors.scss";
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: white;
+  font-family: 'Raleway', sans-serif;
+}
+.additional-content{
+  text-align: left;
+  opacity: .75;
+  width: 35%;
+  // margin: auto;
+  background: $myellowhsl;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  border-left: 1.5rem solid $pblue;
+  text-align: center;
+  -webkit-transition: opacity .3s ease-in-out;
+       -moz-transition: opacity .3s ease-in-out;
+        -ms-transition: opacity .3s ease-in-out;
+         -o-transition: opacity .3s ease-in-out;
+            transition: opacity .3s ease-in-out;
+  &:hover{
+    opacity: 1;
+  }
+  > h2{
+    font-size: 16px;
+    cursor: pointer;
+  }
+  i{
+    padding: 1rem;
+    font-size: 24px;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+         -moz-transition: all .3s ease-in-out;
+          -ms-transition: all .3s ease-in-out;
+           -o-transition: all .3s ease-in-out;
+              transition: all.3s ease-in-out;
+  }
+}
+.additional-content:hover i{
+  color: red;
+  padding-left: 10px;
+}
+#main--container{
+  // margin-top: calc(2rem + 30px);
+  // padding: 2rem;
+  width: 100%;
+  background: $myellowhsl;
+  height: 100vh;
+  position: relative;
+  .content-slider{
+    .desktop{
+      display: none;
+    }
+    .mobile{
+      display: block;
+    }
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    // padding-top: 100px;
+    div{
+      height: 100%;
+      width: 100%;
+      margin: auto;
+      position: relative;
+      h1{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        color: $ared;
+      }
+      img{
+        text-align: center;
+        margin: 0 auto;
+        min-height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+.slick-dotted.slick-slider {
+    margin-bottom: 0;
+}
+.page-footer{
+  height: 350px;
+  width: 100%;
+  background: $offnickel;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  .footer-flex-first{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    h1{
+      text-align: center;
+      color: lighten($dewish, 5);
+    }
+    ul{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-around;
+      li{
+        list-style: none;
+        transition: all .3s ease-in;
+        font-weight: bold;
+        font-size: 1rem;
+        &::after{
+          display: block;
+          content: '';
+          height: 4px;
+          position: relative;
+          top: 0;
+          width: 100%;
+          background: $messy;
+          opacity: .75;
+        }
+        &:hover{
+          transform: scale(1.2);
+        }
+        &:hover a{
+          color: $messy;
+        }
+        a{
+          text-decoration: none;
+          color: $dewish;
+          transition: all .3s ease-in;
+        }
+      }
+    }
+  }
+  .footer-flex-second{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    h1{
+      text-align: center;
+      color: lighten($dewish, 5);
+    }
+    ul{
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-around;
+      li{
+        list-style: none;
+        height: 50px;
+        width: 50px;
+        background: $nickel;
+        border-radius: 50%;
+        position: relative;
+        text-align: center;
+        transition: all .3s ease-in;
+        cursor: pointer;
+        &:hover, &:active{
+          transform: scale(1.2);
+        }
+        &:hover a{
+          color: $messy;
+          font-weight: 400;
+        }
+        a{
+          color: $dewish;
+          height: 50px;
+          width: 50px;
+          border-radius: 50%;
+          transition: all .3s ease-in;
+          i{
+            font-size: 2rem;
+            line-height: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 600px){
+  .page-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    .footer-flex-first{
+      padding: 1rem;
+      height: 100%;
+      width: 50%;
+      border-bottom: 0;
+      border-right: rgba(255,255,255,.3);
+      justify-content: flex-start;
+      h1{
+        text-align: left;
+      }
+      ul{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        padding: 2rem;
+        font-size: 1.5rem;
+        li{
+          display: block;
+          &:hover{
+            transform: scale(1);
+            transform: translateX(10px);
+          }
+          &::after{
+            display: none;
+          }
+        }
+      }
+    }
+    .footer-flex-second{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 1rem;
+      height: 100%;
+      width: 50%;
+      align-items:flex-end;
+      position: relative;
+      h1{
+        text-align: right;
+      }
+      ul{
+        flex-direction: row;
+        justify-content: space-around;
+        height: 100%;
+        width: auto;
+        display:flex;
+        float: right;
+        padding: 2rem;
+        li{
+          float: right;
+          &:nth-child(even){
+            margin: 0 1rem;
+          }
+          &:hover{
+            background: rgba(255,255,255,.55);
+            transform: translateY(-10px);
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 600px){
+  .slick-slide .mobile{
+    display: none;
+  }
+  .slick-slide .desktop{
+    display: block;
+  }
+  .slick-slide div img:nth-child(odd){
+    display: none;
+  }
+  .slick-slide div img:nth-child(even){
+    display: block;
+  }
+}
+@media only screen and (max-width: 599px){
+  .slick-slide .mobile{
+    display: block;
+  }
+  .slick-slide .desktop{
+    display: none;
+  }
+}

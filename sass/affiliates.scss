@@ -1,0 +1,139 @@
+@import "compass/css3";
+@import "mixins.scss";
+@import "colors.scss";
+@import url('https://fonts.googleapis.com/css?family=Raleway|Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body{
+  background: $nickel;
+}
+.affiliate-header{
+    margin-top: 100px;
+    text-align: center;
+    color: $messy;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.affiliates-container{
+  width: 100%;
+  height: calc(500px + 500px + 500px + 150px);
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  & > div{
+    transition: all .3s ease;
+  }
+  .razer-card{
+    width: 100%;
+    height: 500px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .steelseries-card{
+    width: 100%;
+    height: 500px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .twitch-card{
+    width: 100%;
+    height: 500px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+}
+
+.card-header{
+  width: 100%;
+  height: 150px;
+  opacity: .75;
+}
+.card-content{
+  height: 350px;
+  background: rgba(0,0,0,.3);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  h1{
+    font-size: 3rem;
+    color: $messy;
+  }
+  a{
+    display: block;
+    background: transparent;
+    text-decoration: none;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid $messy;
+    color: $messy;
+    font-size: 2rem;
+    transition: all .3s ease;
+    &:hover{
+      border: 2px solid white;
+      background: $messy;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+.razer{
+  background: url(../images/razer.jpg);
+  background-position: top;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.steelseries{
+  background: url(../images/series.png);
+  background-position: bottom;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.twitch{
+  background: url(../images/twitch.png);
+  background-position: center;
+  background-size: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.gold{
+  color: gold;
+}
+.purple{
+  color: purple;
+}
+
+.razer-card:hover, .twitch-card:hover, .steelseries-card:hover{
+  -webkit-box-shadow: 0 10px 6px -6px rgba(0,0,0,.3);
+     -moz-box-shadow: 0 10px 6px -6px rgba(0,0,0,.3);
+          box-shadow: 0 10px 6px -6px rgba(0,0,0,.3);
+          border-bottom: 2px solid rgba(0,0,0,.6);
+          transform: scale(1.05);
+          background: rgba(0,0,0,.8);
+}
+.razer-card:hover h1, .twitch-card:hover h1, .steelseries-card:hover h1{
+  color:white;
+}
+.razer-card:hover .card-header, .twitch-card:hover card-header, .steelseries-card:hover card-header{
+  opacity: 1;
+}
+
+@media only screen and (min-width: 600px){
+  .affiliate-header{
+    margin-top: 150px;
+    font-size: 2rem;
+  }
+  .affiliates-container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: auto;
+  }
+  .razer-card, .twitch-card, .steelseries-card{
+    max-width: 300px;
+  }
+}

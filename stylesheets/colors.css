@@ -1,0 +1,27 @@
+/* HSL */
+/* RGB */
+/*BORDEAUX*/
+/*LIGHTER THAN OFF*/
+@import url("https://fonts.googleapis.com/css?family=Raleway|Satisfy");
+@-webkit-keyframes gradient-transition {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes lightshow {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}

@@ -1,0 +1,204 @@
+/* HSL */
+/* RGB */
+/* HSL */
+/* RGB */
+/*BORDEAUX*/
+/*LIGHTER THAN OFF*/
+@import url("https://fonts.googleapis.com/css?family=Raleway|Satisfy");
+@import url("https://fonts.googleapis.com/css?family=Raleway|Satisfy");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@-webkit-keyframes gradient-transition {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes lightshow {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+/* line 6, ../sass/contact.scss */
+body {
+  background: #48484d;
+}
+
+/* line 9, ../sass/contact.scss */
+.container-contact {
+  background: url(../images/contact-bg.jpg);
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  height: calc(100vh - 65px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 20, ../sass/contact.scss */
+.container-contact .wido-contact {
+  background: #3a3a3a;
+  -webkit-box-shadow: 0 10px 6px -6px rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: 0 10px 6px -6px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 10px 6px -6px rgba(255, 255, 255, 0.3);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+}
+/* line 28, ../sass/contact.scss */
+.container-contact .wido-contact table {
+  margin: auto;
+  padding: 1rem;
+  color: #c5c5c5;
+}
+
+/* line 36, ../sass/contact.scss */
+input[type='text'], input[type='email'], textarea, select {
+  background-color: #F1F1F1;
+  border: none;
+  border-radius: 18px;
+  padding: 10px;
+}
+
+/* line 43, ../sass/contact.scss */
+input[type='submit'] {
+  background-color: black;
+  padding: 10px;
+  color: white;
+  border: none;
+}
+
+/* line 50, ../sass/contact.scss */
+input[type='submit']:hover {
+  background-color: #48484d;
+  color: #c5c5c5;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+/* line 57, ../sass/contact.scss */
+table tr td {
+  padding: 10px 0px;
+}
+
+/* line 60, ../sass/contact.scss */
+input {
+  width: 100%;
+  transition: all .3s ease;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+/* line 67, ../sass/contact.scss */
+.map-container {
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
+
+@media only screen and (max-width: 600px) {
+  /* line 74, ../sass/contact.scss */
+  .wido-contact {
+    transform: scale(0.9);
+  }
+  /* line 76, ../sass/contact.scss */
+  .wido-contact table {
+    transform: scale(0.9);
+  }
+}
+/* line 81, ../sass/contact.scss */
+::-webkit-input-placeholder {
+  opacity: 1;
+  -webkit-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+/* Chrome <=56, Safari < 10 */
+/* line 82, ../sass/contact.scss */
+:-moz-placeholder {
+  opacity: 1;
+  -moz-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+/* FF 4-18 */
+/* line 83, ../sass/contact.scss */
+::-moz-placeholder {
+  opacity: 1;
+  -moz-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+/* FF 19-51 */
+/* line 84, ../sass/contact.scss */
+:-ms-input-placeholder {
+  opacity: 1;
+  -ms-transition: opacity .5s;
+  transition: opacity .5s;
+}
+
+/* IE 10+ */
+/* line 85, ../sass/contact.scss */
+::placeholder {
+  opacity: 1;
+  transition: opacity .5s;
+}
+
+/* Modern Browsers */
+/* line 86, ../sass/contact.scss */
+*:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+/* Chrome <=56, Safari < 10 */
+/* line 87, ../sass/contact.scss */
+*:focus:-moz-placeholder {
+  opacity: 0;
+}
+
+/* FF 4-18 */
+/* line 88, ../sass/contact.scss */
+*:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+/* FF 19-50 */
+/* line 89, ../sass/contact.scss */
+*:focus:-ms-input-placeholder {
+  opacity: 0;
+}
+
+/* IE 10+ */
+/* line 90, ../sass/contact.scss */
+*:focus::placeholder {
+  opacity: 0;
+}
+
+/* Modern Browsers */
+/* line 91, ../sass/contact.scss */
+input[type=text], input[type=email], textarea {
+  -webkit-transition: all 0.30s ease-in-out;
+  -moz-transition: all 0.30s ease-in-out;
+  -ms-transition: all 0.30s ease-in-out;
+  -o-transition: all 0.30s ease-in-out;
+}
+
+/* line 96, ../sass/contact.scss */
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+  box-shadow: 0 0 10px #c5c5c5;
+}
+
+/* line 99, ../sass/contact.scss */
+textarea {
+  resize: none;
+}

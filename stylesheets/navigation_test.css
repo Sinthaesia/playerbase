@@ -1,0 +1,341 @@
+/* HSL */
+/* RGB */
+/* HSL */
+/* RGB */
+/*BORDEAUX*/
+/*LIGHTER THAN OFF*/
+@import url("https://fonts.googleapis.com/css?family=Raleway|Satisfy");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@-webkit-keyframes gradient-transition {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes lightshow {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+/* line 7, ../sass/navigation_test.scss */
+:root {
+  font-size: 16px !important;
+}
+
+/* line 11, ../sass/navigation_test.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 16, ../sass/navigation_test.scss */
+body {
+  position: relative;
+}
+
+/* line 19, ../sass/navigation_test.scss */
+header#desktop-icons {
+  display: block;
+  z-index: 500;
+}
+/* line 22, ../sass/navigation_test.scss */
+header#desktop-icons nav#icons {
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(-45deg, #48484d, #3a3a3a, #48484d, #3a3a3a);
+  background-size: 400% 400%;
+  animation: gradient-transition 7s ease infinite;
+  position: fixed;
+  top: 0;
+  right: 0;
+  font-weight: bold;
+  z-index: 100;
+}
+/* line 35, ../sass/navigation_test.scss */
+header#desktop-icons nav#icons > ul {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  justify-content: flex-end;
+}
+/* line 44, ../sass/navigation_test.scss */
+header#desktop-icons nav#icons > ul > li {
+  list-style: none;
+  text-align: center;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+}
+/* line 48, ../sass/navigation_test.scss */
+header#desktop-icons nav#icons > ul > li:nth-last-child(1) {
+  border-right: none;
+}
+/* line 52, ../sass/navigation_test.scss */
+header#desktop-icons nav#icons > ul > li > a {
+  text-decoration: none;
+  padding: 0 50px;
+  display: block;
+}
+/* line 60, ../sass/navigation_test.scss */
+header#desktop-icons ul li a .name {
+  position: relative;
+  height: 20px;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+/* line 67, ../sass/navigation_test.scss */
+header#desktop-icons ul li a .name span {
+  display: block;
+  position: relative;
+  color: #f1faee;
+  font-size: 18px;
+  line-height: 20px;
+  transition: .5s;
+}
+/* line 75, ../sass/navigation_test.scss */
+header#desktop-icons ul li a .name span::before {
+  content: attr(data-text);
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #00994d;
+}
+/* line 84, ../sass/navigation_test.scss */
+header#desktop-icons ul li a:hover .name span {
+  transform: translateY(20px);
+}
+/* line 87, ../sass/navigation_test.scss */
+header#desktop-icons ul li a .icon {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background: transparent;
+  overflow: hidden;
+  margin: 0 auto 10px;
+}
+/* line 95, ../sass/navigation_test.scss */
+header#desktop-icons ul li a .icon .fas {
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  font-size: 34px;
+  transition: .5s;
+  color: #f1faee;
+}
+/* line 103, ../sass/navigation_test.scss */
+header#desktop-icons ul li a .icon .fas:nth-last-child(1) {
+  color: #00994d;
+}
+/* line 106, ../sass/navigation_test.scss */
+header#desktop-icons ul li a:hover .icon .fas {
+  transform: translateY(-100%);
+}
+/* line 110, ../sass/navigation_test.scss */
+header#desktop-icons .logo {
+  position: absolute;
+  left: 2rem;
+  color: #f1faee;
+  cursor: pointer;
+  font-family: 'Satisfy', cursive;
+  -webkit-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+  -moz-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+  -ms-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+  -o-transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+  transition: all 0.3s cubic-bezier(0.42, 0.42, 0.75, 0.74);
+}
+/* line 121, ../sass/navigation_test.scss */
+header#desktop-icons .logo:hover {
+  color: #0aff85;
+}
+/* line 124, ../sass/navigation_test.scss */
+header#desktop-icons .logo h1 {
+  font-size: 2rem;
+}
+
+@media only screen and (min-width: 992px) {
+  /* line 130, ../sass/navigation_test.scss */
+  header#icon-header {
+    display: none;
+  }
+}
+@media only screen and (max-width: 991px) {
+  /* line 133, ../sass/navigation_test.scss */
+  header#desktop-icons {
+    display: none;
+  }
+
+  /* line 136, ../sass/navigation_test.scss */
+  header#icon-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(-45deg, #48484d, #3a3a3a, #48484d, #3a3a3a);
+    background-size: 400% 400%;
+    animation: gradient-transition 7s ease infinite;
+    display: block;
+    height: 65px;
+    z-index: 500;
+    font-family: 'Satisfy', cursive;
+  }
+  /* line 150, ../sass/navigation_test.scss */
+  header#icon-header .logo {
+    color: #f1faee;
+    height: 65px;
+    line-height: 65px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3 ease;
+    -moz-transition: all .3s ease;
+  }
+  /* line 163, ../sass/navigation_test.scss */
+  header#icon-header .logo:hover {
+    color: #00994d;
+  }
+  /* line 167, ../sass/navigation_test.scss */
+  header#icon-header nav {
+    /* use display none or left:-100% to hide the nav  */
+    /* display: none; */
+    position: absolute;
+    top: 65px;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: calc(100vh - 65px);
+    background: linear-gradient(-135deg, #48484d, #3a3a3a);
+    overflow-y: hidden;
+  }
+  /* line 179, ../sass/navigation_test.scss */
+  header#icon-header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
+    font-family: 'Raleway', sans-serif;
+  }
+  /* line 188, ../sass/navigation_test.scss */
+  header#icon-header nav ul li {
+    list-style: none;
+    position: relative;
+  }
+  /* line 191, ../sass/navigation_test.scss */
+  header#icon-header nav ul li ul {
+    position: absolute;
+    left: 0;
+    background: #333;
+    display: none;
+  }
+  /* line 196, ../sass/navigation_test.scss */
+  header#icon-header nav ul li ul li {
+    display: block;
+    width: 200px;
+  }
+  /* line 201, ../sass/navigation_test.scss */
+  header#icon-header nav ul li i {
+    font-size: 2rem;
+  }
+  /* line 204, ../sass/navigation_test.scss */
+  header#icon-header nav ul li a {
+    color: #f1faee;
+    font-size: 1.25rem;
+    opacity: .75;
+    transition: all .3s ease-out;
+    height: 100%;
+    line-height: 50px;
+    width: 100%;
+    text-decoration: none;
+    display: block;
+    padding: 0 1rem;
+  }
+  /* line 215, ../sass/navigation_test.scss */
+  header#icon-header nav ul li a h1 {
+    width: 100%;
+  }
+  /* line 218, ../sass/navigation_test.scss */
+  header#icon-header nav ul li a:hover {
+    opacity: 1;
+    font-weight: 400;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.65);
+  }
+
+  /* line 229, ../sass/navigation_test.scss */
+  header nav ul li.active ul {
+    /* use li: hover instead */
+    display: block;
+  }
+
+  /* line 233, ../sass/navigation_test.scss */
+  header nav ul li a.active {
+    background: rgba(0, 0, 0, 0.65);
+  }
+}
+/* line 248, ../sass/navigation_test.scss */
+.something {
+  display: block;
+  position: relative;
+}
+
+/* line 253, ../sass/navigation_test.scss */
+.test-content {
+  height: 1500px;
+  width: 100%;
+  background: #a8dadc;
+  padding-top: 65px;
+}
+
+/* line 259, ../sass/navigation_test.scss */
+.is__active {
+  width: 100vw;
+  animation: navigation 350ms ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes navigation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100vw;
+  }
+}
+/* line 269, ../sass/navigation_test.scss */
+.is__closed {
+  width: 0vw !important;
+  animation: closenav 350ms ease;
+}
+
+@keyframes closenav {
+  0% {
+    width: inherit;
+  }
+  100% {
+    width: 0vw;
+  }
+}

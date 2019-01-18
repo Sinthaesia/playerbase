@@ -1,0 +1,151 @@
+@import "compass/css3";
+@import "mixins.scss";
+@import "colors.scss";
+@import url('https://fonts.googleapis.com/css?family=Raleway|Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body{
+  background: $nickel;
+}
+
+.wrapper-404{
+  height: calc(100vh - 65px);
+  width: 100%;
+  position: relative;
+  margin-top: 65px;
+  .header-404{
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
+    background: rgba(0,0,0,.6);
+    height: 200px;
+    // padding: 0 2rem;
+    line-height: 200px;
+    @include angle-edge(topleft, 3deg, bottomright, 3deg);
+    &::before{
+      // -webkit-box-shadow: 0 10px 6px -6px rgba(255,255,255,.6);
+	    //    -moz-box-shadow: 0 10px 6px -6px rgba(255,255,255,.6);
+	    //         box-shadow: 0 10px 6px -6px rgba(255,255,255,.6);
+              border-top: 2px solid rgba(255,255,255,.2);
+            }
+    &::after{
+      -webkit-box-shadow: 0 10px 6px -6px rgba(0,0,0,.6);
+	       -moz-box-shadow: 0 10px 6px -6px rgba(0,0,0,.6);
+	            box-shadow: 0 10px 6px -6px rgba(0,0,0,.6);
+              border-bottom: 2px solid rgba(0,0,0,.6);
+            }
+
+    h1{
+      font-size: 6rem;
+      border-radius: 8px;
+      // padding: 0 2rem;
+      color: $txtnickel;
+      width: 100%;
+      text-align: center;
+      position: relative;
+      // &::after{
+      //   content: '';
+      //   display: block;
+      //   height: 1px;
+      //   background: linear-gradient(to right, darken($nickel, 7) 0%, darken($offnickel, 7) 100%);
+      //   position: absolute;
+      //   bottom: 0;
+      //   width: 100%;
+      // }
+      // &::before{
+      //   content: '';
+      //   display: block;
+      //   height: 1px;
+      //   background: linear-gradient(-45deg, $nickel, $offnickel, $nickel, $offnickel);
+      //   position: absolute;
+      //   top: 0;
+      //   width: 100%;
+      // }
+    }
+  }
+  .wrapper-left{
+    z-index: 0;
+    width: 100%;
+    height: 50%;
+    position: relative;
+    background: $offnickel;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .blur-bg{
+      position: relative;
+      height: 100%;
+      width: 100%;
+      /* The image used */
+      background: url(../images/sims4-woman.jpg);
+
+      /* Add the blur effect */
+      filter: blur(4px);
+      -webkit-filter: blur(4px);
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 5;
+      opacity: .75;
+    }
+    h1{
+      z-index: 10;
+      filter: none;
+      position: absolute;
+      color: $txtnickel;
+    }
+  }
+  .wrapper-right{
+    width: 100%;
+    height: 50%;
+    position: relative;
+    background: $nickel;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 1rem;
+    vertical-align: center;
+    h1{
+      display: inline-block;
+      font-size: 5rem;
+      color: $txtnickel;
+    }
+    p{
+      color: $txtnickel;
+      font-size: 1.25rem;
+      display: inline-block;
+      a{
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: underline;
+        color: $messy;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px){
+  .wrapper-left{
+    h1{
+      font-size: 3rem;
+    }
+  }
+}
+@media only screen and (min-width: 1200px){
+  .wrapper-left{
+    h1{
+      font-size: 5rem;
+      padding-bottom: 5rem;
+    }
+  }
+  .wrapper-right{
+    align-items: center;
+    h1{
+      padding-top: 5rem;
+    }
+  }
+}

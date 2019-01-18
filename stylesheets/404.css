@@ -1,0 +1,187 @@
+/* HSL */
+/* RGB */
+/* HSL */
+/* RGB */
+/*BORDEAUX*/
+/*LIGHTER THAN OFF*/
+@import url("https://fonts.googleapis.com/css?family=Raleway|Satisfy");
+@import url("https://fonts.googleapis.com/css?family=Raleway|Satisfy");
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@-webkit-keyframes gradient-transition {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes lightshow {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+/* line 7, ../sass/404.scss */
+body {
+  background: #48484d;
+}
+
+/* line 11, ../sass/404.scss */
+.wrapper-404 {
+  height: calc(100vh - 65px);
+  width: 100%;
+  position: relative;
+  margin-top: 65px;
+}
+/* line 16, ../sass/404.scss */
+.wrapper-404 .header-404 {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.6);
+  height: 200px;
+  line-height: 200px;
+  width: 100%;
+  background: linear-gradient(to right, #2f2f33 0%, #212121 100%);
+}
+/* line 77, ../sass/colors.scss */
+.wrapper-404 .header-404::before, .wrapper-404 .header-404::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: inherit;
+  z-index: -1;
+  transition: ease all .5s;
+}
+/* line 89, ../sass/colors.scss */
+.wrapper-404 .header-404::before {
+  top: 0;
+  transform-origin: right top;
+  transform: skewY(3deg);
+}
+/* line 104, ../sass/colors.scss */
+.wrapper-404 .header-404::after {
+  bottom: 0;
+  transform-origin: left bottom;
+  transform: skewY(3deg);
+}
+/* line 27, ../sass/404.scss */
+.wrapper-404 .header-404::before {
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+/* line 33, ../sass/404.scss */
+.wrapper-404 .header-404::after {
+  -webkit-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 10px 6px -6px rgba(0, 0, 0, 0.6);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.6);
+}
+/* line 40, ../sass/404.scss */
+.wrapper-404 .header-404 h1 {
+  font-size: 6rem;
+  border-radius: 8px;
+  color: #c5c5c5;
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+/* line 68, ../sass/404.scss */
+.wrapper-404 .wrapper-left {
+  z-index: 0;
+  width: 100%;
+  height: 50%;
+  position: relative;
+  background: #3a3a3a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 77, ../sass/404.scss */
+.wrapper-404 .wrapper-left .blur-bg {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  /* The image used */
+  background: url(../images/sims4-woman.jpg);
+  /* Add the blur effect */
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 5;
+  opacity: .75;
+}
+/* line 95, ../sass/404.scss */
+.wrapper-404 .wrapper-left h1 {
+  z-index: 10;
+  filter: none;
+  position: absolute;
+  color: #c5c5c5;
+}
+/* line 102, ../sass/404.scss */
+.wrapper-404 .wrapper-right {
+  width: 100%;
+  height: 50%;
+  position: relative;
+  background: #48484d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 1rem;
+  vertical-align: center;
+}
+/* line 112, ../sass/404.scss */
+.wrapper-404 .wrapper-right h1 {
+  display: inline-block;
+  font-size: 5rem;
+  color: #c5c5c5;
+}
+/* line 117, ../sass/404.scss */
+.wrapper-404 .wrapper-right p {
+  color: #c5c5c5;
+  font-size: 1.25rem;
+  display: inline-block;
+}
+/* line 121, ../sass/404.scss */
+.wrapper-404 .wrapper-right p a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #00994d;
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 133, ../sass/404.scss */
+  .wrapper-left h1 {
+    font-size: 3rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  /* line 140, ../sass/404.scss */
+  .wrapper-left h1 {
+    font-size: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  /* line 145, ../sass/404.scss */
+  .wrapper-right {
+    align-items: center;
+  }
+  /* line 147, ../sass/404.scss */
+  .wrapper-right h1 {
+    padding-top: 5rem;
+  }
+}

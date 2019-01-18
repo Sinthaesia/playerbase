@@ -1,0 +1,371 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* HSL */
+/* RGB */
+@import url("https://fonts.googleapis.com/css?family=Raleway|Satisfy");
+/* HSL */
+/* RGB */
+/*BORDEAUX*/
+/*LIGHTER THAN OFF*/
+@import url("https://fonts.googleapis.com/css?family=Raleway|Satisfy");
+@-webkit-keyframes gradient-transition {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-webkit-keyframes lightshow {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 300% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+/* line 9, ../sass/screen.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* line 14, ../sass/screen.scss */
+body {
+  background: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* line 18, ../sass/screen.scss */
+.additional-content {
+  text-align: left;
+  opacity: .75;
+  width: 35%;
+  background: rgba(252, 193, 74, 0.5);
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  border-left: 1.5rem solid #003049;
+  text-align: center;
+  -webkit-transition: opacity .3s ease-in-out;
+  -moz-transition: opacity .3s ease-in-out;
+  -ms-transition: opacity .3s ease-in-out;
+  -o-transition: opacity .3s ease-in-out;
+  transition: opacity .3s ease-in-out;
+}
+/* line 35, ../sass/screen.scss */
+.additional-content:hover {
+  opacity: 1;
+}
+/* line 38, ../sass/screen.scss */
+.additional-content > h2 {
+  font-size: 16px;
+  cursor: pointer;
+}
+/* line 42, ../sass/screen.scss */
+.additional-content i {
+  padding: 1rem;
+  font-size: 24px;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* line 53, ../sass/screen.scss */
+.additional-content:hover i {
+  color: red;
+  padding-left: 10px;
+}
+
+/* line 57, ../sass/screen.scss */
+#main--container {
+  width: 100%;
+  background: rgba(252, 193, 74, 0.5);
+  height: 100vh;
+  position: relative;
+}
+/* line 64, ../sass/screen.scss */
+#main--container .content-slider {
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+/* line 65, ../sass/screen.scss */
+#main--container .content-slider .desktop {
+  display: none;
+}
+/* line 68, ../sass/screen.scss */
+#main--container .content-slider .mobile {
+  display: block;
+}
+/* line 75, ../sass/screen.scss */
+#main--container .content-slider div {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  position: relative;
+}
+/* line 80, ../sass/screen.scss */
+#main--container .content-slider div h1 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  color: #d62828;
+}
+/* line 86, ../sass/screen.scss */
+#main--container .content-slider div img {
+  text-align: center;
+  margin: 0 auto;
+  min-height: 100%;
+  width: 100%;
+}
+
+/* line 95, ../sass/screen.scss */
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+/* line 98, ../sass/screen.scss */
+.page-footer {
+  height: 350px;
+  width: 100%;
+  background: #3a3a3a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+/* line 106, ../sass/screen.scss */
+.page-footer .footer-flex-first {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+/* line 113, ../sass/screen.scss */
+.page-footer .footer-flex-first h1 {
+  text-align: center;
+  color: white;
+}
+/* line 117, ../sass/screen.scss */
+.page-footer .footer-flex-first ul {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+/* line 122, ../sass/screen.scss */
+.page-footer .footer-flex-first ul li {
+  list-style: none;
+  transition: all .3s ease-in;
+  font-weight: bold;
+  font-size: 1rem;
+}
+/* line 127, ../sass/screen.scss */
+.page-footer .footer-flex-first ul li::after {
+  display: block;
+  content: '';
+  height: 4px;
+  position: relative;
+  top: 0;
+  width: 100%;
+  background: #00994d;
+  opacity: .75;
+}
+/* line 137, ../sass/screen.scss */
+.page-footer .footer-flex-first ul li:hover {
+  transform: scale(1.2);
+}
+/* line 140, ../sass/screen.scss */
+.page-footer .footer-flex-first ul li:hover a {
+  color: #00994d;
+}
+/* line 143, ../sass/screen.scss */
+.page-footer .footer-flex-first ul li a {
+  text-decoration: none;
+  color: #f1faee;
+  transition: all .3s ease-in;
+}
+/* line 151, ../sass/screen.scss */
+.page-footer .footer-flex-second {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+/* line 158, ../sass/screen.scss */
+.page-footer .footer-flex-second h1 {
+  text-align: center;
+  color: white;
+}
+/* line 162, ../sass/screen.scss */
+.page-footer .footer-flex-second ul {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+/* line 167, ../sass/screen.scss */
+.page-footer .footer-flex-second ul li {
+  list-style: none;
+  height: 50px;
+  width: 50px;
+  background: #48484d;
+  border-radius: 50%;
+  position: relative;
+  text-align: center;
+  transition: all .3s ease-in;
+  cursor: pointer;
+}
+/* line 177, ../sass/screen.scss */
+.page-footer .footer-flex-second ul li:hover, .page-footer .footer-flex-second ul li:active {
+  transform: scale(1.2);
+}
+/* line 180, ../sass/screen.scss */
+.page-footer .footer-flex-second ul li:hover a {
+  color: #00994d;
+  font-weight: 400;
+}
+/* line 184, ../sass/screen.scss */
+.page-footer .footer-flex-second ul li a {
+  color: #f1faee;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transition: all .3s ease-in;
+}
+/* line 190, ../sass/screen.scss */
+.page-footer .footer-flex-second ul li a i {
+  font-size: 2rem;
+  line-height: 50px;
+}
+
+@media only screen and (min-width: 600px) {
+  /* line 200, ../sass/screen.scss */
+  .page-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  /* line 204, ../sass/screen.scss */
+  .page-footer .footer-flex-first {
+    padding: 1rem;
+    height: 100%;
+    width: 50%;
+    border-bottom: 0;
+    border-right: rgba(255, 255, 255, 0.3);
+    justify-content: flex-start;
+  }
+  /* line 211, ../sass/screen.scss */
+  .page-footer .footer-flex-first h1 {
+    text-align: left;
+  }
+  /* line 214, ../sass/screen.scss */
+  .page-footer .footer-flex-first ul {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    padding: 2rem;
+    font-size: 1.5rem;
+  }
+  /* line 220, ../sass/screen.scss */
+  .page-footer .footer-flex-first ul li {
+    display: block;
+  }
+  /* line 222, ../sass/screen.scss */
+  .page-footer .footer-flex-first ul li:hover {
+    transform: scale(1);
+    transform: translateX(10px);
+  }
+  /* line 226, ../sass/screen.scss */
+  .page-footer .footer-flex-first ul li::after {
+    display: none;
+  }
+  /* line 232, ../sass/screen.scss */
+  .page-footer .footer-flex-second {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+    height: 100%;
+    width: 50%;
+    align-items: flex-end;
+    position: relative;
+  }
+  /* line 241, ../sass/screen.scss */
+  .page-footer .footer-flex-second h1 {
+    text-align: right;
+  }
+  /* line 244, ../sass/screen.scss */
+  .page-footer .footer-flex-second ul {
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    width: auto;
+    display: flex;
+    float: right;
+    padding: 2rem;
+  }
+  /* line 252, ../sass/screen.scss */
+  .page-footer .footer-flex-second ul li {
+    float: right;
+  }
+  /* line 254, ../sass/screen.scss */
+  .page-footer .footer-flex-second ul li:nth-child(even) {
+    margin: 0 1rem;
+  }
+  /* line 257, ../sass/screen.scss */
+  .page-footer .footer-flex-second ul li:hover {
+    background: rgba(255, 255, 255, 0.55);
+    transform: translateY(-10px);
+  }
+}
+@media only screen and (min-width: 600px) {
+  /* line 267, ../sass/screen.scss */
+  .slick-slide .mobile {
+    display: none;
+  }
+
+  /* line 270, ../sass/screen.scss */
+  .slick-slide .desktop {
+    display: block;
+  }
+
+  /* line 273, ../sass/screen.scss */
+  .slick-slide div img:nth-child(odd) {
+    display: none;
+  }
+
+  /* line 276, ../sass/screen.scss */
+  .slick-slide div img:nth-child(even) {
+    display: block;
+  }
+}
+@media only screen and (max-width: 599px) {
+  /* line 281, ../sass/screen.scss */
+  .slick-slide .mobile {
+    display: block;
+  }
+
+  /* line 284, ../sass/screen.scss */
+  .slick-slide .desktop {
+    display: none;
+  }
+}
