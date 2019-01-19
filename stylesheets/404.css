@@ -163,24 +163,65 @@ body {
   color: #00994d;
 }
 
+/* line 130, ../sass/404.scss */
+.loader {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+/* line 134, ../sass/404.scss */
+.loader span {
+  color: #3a3a3a;
+  margin: 0 15px;
+  font-size: 9em;
+  font-weight: bold;
+  animation: errorpage 2.4s linear infinite;
+}
+/* line 140, ../sass/404.scss */
+.loader span:nth-child(1) {
+  animation-delay: .3s;
+}
+/* line 143, ../sass/404.scss */
+.loader span:nth-child(2) {
+  animation-delay: .6s;
+}
+/* line 146, ../sass/404.scss */
+.loader span:nth-child(3) {
+  animation-delay: .9s;
+}
+
+@keyframes errorpage {
+  0% {
+    text-shadow: 0 0 10px transparent;
+    transform: scale(1);
+  }
+  40% {
+    text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.4);
+  }
+  80%,100% {
+    text-shadow: 0 0 10px transparent;
+    transform: scale(1);
+  }
+}
 @media only screen and (min-width: 600px) {
-  /* line 133, ../sass/404.scss */
+  /* line 167, ../sass/404.scss */
   .wrapper-left h1 {
     font-size: 3rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  /* line 140, ../sass/404.scss */
+  /* line 174, ../sass/404.scss */
   .wrapper-left h1 {
     font-size: 5rem;
     padding-bottom: 5rem;
   }
 
-  /* line 145, ../sass/404.scss */
+  /* line 179, ../sass/404.scss */
   .wrapper-right {
     align-items: center;
   }
-  /* line 147, ../sass/404.scss */
+  /* line 181, ../sass/404.scss */
   .wrapper-right h1 {
     padding-top: 5rem;
   }

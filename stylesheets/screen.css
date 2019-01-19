@@ -338,16 +338,6 @@ body {
   }
 }
 @media only screen and (min-width: 600px) {
-  /* line 267, ../sass/screen.scss */
-  .slick-slide .mobile {
-    display: none;
-  }
-
-  /* line 270, ../sass/screen.scss */
-  .slick-slide .desktop {
-    display: block;
-  }
-
   /* line 273, ../sass/screen.scss */
   .slick-slide div img:nth-child(odd) {
     display: none;
@@ -359,13 +349,13 @@ body {
   }
 }
 @media only screen and (max-width: 599px) {
-  /* line 281, ../sass/screen.scss */
-  .slick-slide .mobile {
-    display: block;
+  /* line 287, ../sass/screen.scss */
+  .slick-slide div img:nth-child(even) {
+    display: none;
   }
 
-  /* line 284, ../sass/screen.scss */
-  .slick-slide .desktop {
-    display: none;
+  /* line 290, ../sass/screen.scss */
+  .slick-slide div img:nth-child(odd) {
+    display: block;
   }
 }
