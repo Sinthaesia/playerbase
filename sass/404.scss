@@ -97,6 +97,7 @@ body{
       filter: none;
       position: absolute;
       color: $txtnickel;
+      font-size: 1.5em;
     }
   }
   .wrapper-right{
@@ -105,14 +106,15 @@ body{
     position: relative;
     background: $nickel;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     flex-direction: column;
     padding: 0 1rem;
     vertical-align: center;
     h1{
       display: inline-block;
-      font-size: 5rem;
+      font-size: 2em;
       color: $txtnickel;
+      margin: 10px 0;
     }
     p{
       color: $txtnickel;

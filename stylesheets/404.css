@@ -130,32 +130,34 @@ body {
   filter: none;
   position: absolute;
   color: #c5c5c5;
+  font-size: 1.5em;
 }
-/* line 102, ../sass/404.scss */
+/* line 103, ../sass/404.scss */
 .wrapper-404 .wrapper-right {
   width: 100%;
   height: 50%;
   position: relative;
   background: #48484d;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
   padding: 0 1rem;
   vertical-align: center;
 }
-/* line 112, ../sass/404.scss */
+/* line 113, ../sass/404.scss */
 .wrapper-404 .wrapper-right h1 {
   display: inline-block;
-  font-size: 5rem;
+  font-size: 2em;
   color: #c5c5c5;
+  margin: 10px 0;
 }
-/* line 117, ../sass/404.scss */
+/* line 119, ../sass/404.scss */
 .wrapper-404 .wrapper-right p {
   color: #c5c5c5;
   font-size: 1.25rem;
   display: inline-block;
 }
-/* line 121, ../sass/404.scss */
+/* line 123, ../sass/404.scss */
 .wrapper-404 .wrapper-right p a {
   font-size: 1.5rem;
   font-weight: bold;
@@ -163,13 +165,13 @@ body {
   color: #00994d;
 }
 
-/* line 130, ../sass/404.scss */
+/* line 132, ../sass/404.scss */
 .loader {
   position: relative;
   display: flex;
   justify-content: center;
 }
-/* line 134, ../sass/404.scss */
+/* line 136, ../sass/404.scss */
 .loader span {
   color: #3a3a3a;
   margin: 0 15px;
@@ -177,15 +179,15 @@ body {
   font-weight: bold;
   animation: errorpage 2.4s linear infinite;
 }
-/* line 140, ../sass/404.scss */
+/* line 142, ../sass/404.scss */
 .loader span:nth-child(1) {
   animation-delay: .3s;
 }
-/* line 143, ../sass/404.scss */
+/* line 145, ../sass/404.scss */
 .loader span:nth-child(2) {
   animation-delay: .6s;
 }
-/* line 146, ../sass/404.scss */
+/* line 148, ../sass/404.scss */
 .loader span:nth-child(3) {
   animation-delay: .9s;
 }
@@ -205,23 +207,23 @@ body {
   }
 }
 @media only screen and (min-width: 600px) {
-  /* line 167, ../sass/404.scss */
+  /* line 169, ../sass/404.scss */
   .wrapper-left h1 {
     font-size: 3rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  /* line 174, ../sass/404.scss */
+  /* line 176, ../sass/404.scss */
   .wrapper-left h1 {
     font-size: 5rem;
     padding-bottom: 5rem;
   }
 
-  /* line 179, ../sass/404.scss */
+  /* line 181, ../sass/404.scss */
   .wrapper-right {
     align-items: center;
   }
-  /* line 181, ../sass/404.scss */
+  /* line 183, ../sass/404.scss */
   .wrapper-right h1 {
     padding-top: 5rem;
   }
