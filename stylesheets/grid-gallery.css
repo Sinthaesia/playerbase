@@ -86,7 +86,7 @@
 
   /* line 70, ../sass/grid-gallery.scss */
   .figure-5 {
-    grid-column: span 3;
+    grid-column: span 6;
   }
   /* line 73, ../sass/grid-gallery.scss */
   .figure-5 video {
@@ -99,7 +99,7 @@
 
   /* line 81, ../sass/grid-gallery.scss */
   .figure-6 {
-    grid-column: span 3;
+    grid-column: span 6;
     -webkit-box-shadow: 0px 0px 29px -3px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 29px -3px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 29px -3px rgba(0, 0, 0, 0.75);
@@ -170,22 +170,38 @@
 }
 @media only screen and (min-width: 1000px) {
   /* line 147, ../sass/grid-gallery.scss */
+  .figure-5 {
+    grid-column: span 3;
+  }
+
+  /* line 150, ../sass/grid-gallery.scss */
+  .figure-6 {
+    grid-column: span 3;
+    -webkit-box-shadow: 0px 0px 29px -3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 29px -3px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 29px -3px rgba(0, 0, 0, 0.75);
+    transition: all .3s ease;
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* line 159, ../sass/grid-gallery.scss */
   .figure-7 {
     grid-column: span 4;
     grid-row: span 4;
   }
 
-  /* line 151, ../sass/grid-gallery.scss */
+  /* line 163, ../sass/grid-gallery.scss */
   .figure-8 {
     grid-column: span 2;
   }
 
-  /* line 154, ../sass/grid-gallery.scss */
+  /* line 166, ../sass/grid-gallery.scss */
   .figure-9 {
     grid-column: span 2;
   }
 }
-/* line 158, ../sass/grid-gallery.scss */
+/* line 170, ../sass/grid-gallery.scss */
 .figure-img {
   display: block;
   width: 100%;
@@ -193,39 +209,39 @@
   object-fit: cover;
 }
 
-/* line 164, ../sass/grid-gallery.scss */
+/* line 176, ../sass/grid-gallery.scss */
 .info-1, .info-2 {
   padding: 2rem;
   background: #3a3a3a;
   color: white;
 }
-/* line 168, ../sass/grid-gallery.scss */
+/* line 180, ../sass/grid-gallery.scss */
 .info-1 h2, .info-2 h2 {
   font-size: 2em;
   margin-bottom: 1em;
 }
-/* line 172, ../sass/grid-gallery.scss */
+/* line 184, ../sass/grid-gallery.scss */
 .info-1 p, .info-2 p {
   margin-bottom: 1em;
   font-weight: lighter;
 }
-/* line 176, ../sass/grid-gallery.scss */
+/* line 188, ../sass/grid-gallery.scss */
 .info-1 .info-link, .info-2 .info-link {
   text-decoration: none;
   color: white;
 }
-/* line 180, ../sass/grid-gallery.scss */
+/* line 192, ../sass/grid-gallery.scss */
 .info-1 .info-1, .info-1 .info2, .info-2 .info-1, .info-2 .info2 {
   grid-column: span 2;
   grid-row: span 2;
 }
 
-/* line 185, ../sass/grid-gallery.scss */
+/* line 197, ../sass/grid-gallery.scss */
 .overlay {
   display: none;
 }
 
-/* line 188, ../sass/grid-gallery.scss */
+/* line 200, ../sass/grid-gallery.scss */
 .figure-5 {
   padding: .5rem 0;
   background: #3a3a3a;
